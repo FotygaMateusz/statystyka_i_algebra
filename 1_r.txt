@@ -1,0 +1,58 @@
+napoje = read.csv("C:/Users/Mateusz/Desktop/statistyka/r/napoje_po_reklamie.csv", sep=";", row.names = 1, header = TRUE)
+> typeof(napoje)
+[1] "list"
+> mean_pepsi = mean(napoje$pepsi)
+> sd_fanta = sd(napoje$fanta)
+> var_zywiec = var(napoje$zywiec)
+> min_okocim = min(napoje$okocim)
+> max_regionalne = max(napoje$regionalne)
+> med_cola = median(napoje$cola)
+> range_lech = range(napoje$lech)
+
+> mean_pepsi
+[1] 109203.8
+> sd_fanta
+[1] 4927.971
+> var_zywiec
+[1] 10081647
+> min_okocim
+[1] 52596
+> max_regionalne
+[1] 64720
+> med_cola
+[1] 226084
+> range_lech
+[1] 54589 68841
+
+
+
+> pepsi = as.numeric(unlist(napoje[1]))
+> fanta = as.numeric(unlist(napoje[2]))
+> mean(pepsi)
+[1] 109203.8
+> sd(pepsi)
+[1] 5312.374
+> var(pepsi)
+[1] 28221322
+> min(pepsi)
+[1] 102809
+> max(pepsi)
+[1] 119110
+> median(pepsi)
+[1] 107600.5
+> range(pepsi)
+[1] 102809 119110
+> sd(fanta)
+[1] 4927.971
+> mean(fanta)
+[1] 42626.5
+> var(fanta)
+[1] 24284894
+> min(fanta)
+[1] 34145
+> max(fanta)
+[1] 51504
+> median(fanta)
+[1] 41931.5
+> range(fanta)
+[1] 34145 51504
